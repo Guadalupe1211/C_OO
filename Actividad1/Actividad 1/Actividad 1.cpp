@@ -5,8 +5,13 @@
 #include"operaNumeros.h"
 #include <iostream>
 
+
 int main()
 {
+    int variableEntera;
+    char variableChar; 
+
+   //Inicializacion de variable con clase operaNumeros
     operaNumeros miVariable;
     operaNumeros miVariable2(2, 3);
     operaNumeros mivariable3(4, 5);
@@ -29,12 +34,17 @@ int main()
     int numsuma1;
     int numsuma2;
     
-    std::cout << "Ingresa el primer número" << std::endl;
-    std::cout << "Ingresa el segundo número" << std::endl;
+    std::cout << "Ingresa el primer numero " << std::endl;
+    std::cin >> numsuma1;
+    std::cout << "Ingresa el segundo numero " <<  std::endl;
+    std::cin >> numsuma2;
     
+    operaNumeros operacion1(numsuma1, numsuma2);
     
-    int multiplicacion;
-
+    std::cout << "La suma de los dos numeros previamente dados es: " << operacion1.suma() << std::endl;
+    std::cout << "La resta de los dos numeros previamente dados es: " << operacion1.resta() << std::endl;
+    std::cout << "La multiplicacion de los dos numeros previamente dados es: " << operacion1.multiplicion() << std::endl;
+    
 
 
     //std::cout << " " << miVariable.suma(unValor,unValor2);

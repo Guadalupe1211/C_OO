@@ -8,8 +8,8 @@ private:
 public:
 	operaNumeros();
 	operaNumeros(int, int); //constructor parametrizado que va a recibir valores
-	int suma();
-	int resta();
-	int multiplicion();
+	int suma(); //inicializando el metodo suma tipo entero
+	int resta(); //inicializando el metodo resta tipo entero
+	int multiplicion();//inicializando el metodo o funcion multiplicacion tipo entero
 };
 

@@ -2,8 +2,8 @@
 
 operaNumeros::operaNumeros()
 {
-	a = 1;
-	b = 2;
+	a = 0;
+	b = 0;
 }
 
 operaNumeros::operaNumeros(int val1, int val2)
